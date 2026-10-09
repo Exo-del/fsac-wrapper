@@ -359,8 +359,13 @@ async function loadStats() {
 
 function animateCounters() {
   const nums = els.statsRow.querySelectorAll(".num[data-target]");
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   nums.forEach((el) => {
     const target = Number(el.dataset.target) || 0;
+    if (reduce) {
+      el.textContent = target.toLocaleString("fr-FR");
+      return;
+    }
     const dur = 900;
     const t0 = performance.now();
     const step = (t) => {
