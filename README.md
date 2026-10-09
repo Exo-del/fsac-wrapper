@@ -41,7 +41,7 @@ A Python/FastAPI wrapper that re-presents the public data of the [Faculté des S
 |:---:|:---:|
 | ![Home](assets/screenshot-home.png) | ![News](assets/screenshot-news.png) |
 
-|  Article drawer (19 PDF attachments)    |
+| Article drawer (19 PDF attachments) |
 | ![Drawer](assets/screenshot-drawer.png) |
 
 | Mobile (420px) |
