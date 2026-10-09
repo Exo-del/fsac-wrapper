@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light" />
+  <title>FSAC — Portail local (preuve de concept)</title>
+  <meta name="description"
+    content="Clone local non officiel du site de la Faculté des Sciences Aïn Chock — preuve de concept pédagogique." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/styles.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%231a4f80'/><text x='16' y='22' font-size='14' font-family='Georgia' font-weight='bold' fill='white' text-anchor='middle'>F</text></svg>" />
+</head>
+
+<body>
+  <!-- ======================= UTILITY BAR ======================= -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span class="utility-left">Université Hassan II de Casablanca · Faculté des Sciences Aïn Chock</span>
+      <span class="utility-right">
+        <span class="poc-tag" title="Ce site est un clone technique à but pédagogique">Clone — preuve de concept</span>
+        <a href="https://www.fsac.ac.ma/" target="_blank" rel="noopener noreferrer">Site officiel ↗</a>
+        <a href="https://ent.univh2c.ma" target="_blank" rel="noopener noreferrer">Accès ENT ↗</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- ======================= MASTHEAD ======================= -->
+  <header class="masthead">
+    <div class="container masthead-inner">
+      <a class="masthead-brand" href="#/" aria-label="Accueil">
+        <img src="/static/img/FSAC-logo.jpg" alt="Logo FSAC — Université Hassan II de Casablanca" width="212"
+          height="83" />
+      </a>
+      <div class="masthead-side">
+        <div class="masthead-titles">
+          <strong>Faculté des Sciences Aïn Chock</strong>
+          <span>Portail local non officiel · données en temps réel</span>
+        </div>
+        <form class="masthead-search" id="searchForm" role="search">
+          <input id="search" type="search" placeholder="Rechercher ( actualités, formations… )" autocomplete="off"
+            aria-label="Rechercher" />
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======================= MAIN NAV ======================= -->
+  <nav class="main-nav" aria-label="Navigation principale">
+    <div class="container">
+      <ul id="mainNav">
+        <li><a href="#/" data-nav="home">Accueil</a></li>
+        <li><a href="#/page/presentation" data-nav="page:presentation">Présentation</a></li>
+        <li><a href="#/page/departements" data-nav="page:departements">Départements</a></li>
+        <li><a href="#/page/formations" data-nav="page:formations">Formations</a></li>
+        <li><a href="#/page/recherche" data-nav="page:recherche">Recherche</a></li>
+        <li><a href="#/page/espace_etu" data-nav="page:espace_etu">Espace étudiant</a></li>
+        <li><a href="#/actualites" data-nav="news">Actualités</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container" id="main">
+    <!-- ======================= HOME VIEW ======================= -->
+    <section id="view-home" class="view">
+      <div class="intro-band">
+        <div class="intro-grid">
+          <div class="intro-text">
+            <p class="eyebrow">Depuis 1981 · Casablanca</p>
+            <h1>La Faculté des Sciences<br />Aïn Chock en clair</h1>
+            <p class="lead">
+              Ce portail local regroupe, dans une interface moderne, les informations
+              publiques de la FSAC&nbsp;: actualités officielles, offres de formation,
+              départements, recherche et espace étudiant — lues en direct depuis le
+              site de la faculté.
+            </p>
+            <p class="intro-links">
+              <a class="text-link" href="#/page/presentation">Lire la présentation →</a>
+              <a class="text-link" href="#/actualites">Toutes les actualités →</a>
+            </p>
+          </div>
+          <aside class="intro-facts">
+            <h2>En bref</h2>
+            <dl>
+              <div><dt>Fondation</dt><dd>1981</dd></div>
+              <div><dt>Université</dt><dd>Hassan II de Casablanca</dd></div>
+              <div><dt>Départements</dt><dd>5 (Maths, Info, Physique, Chimie, Bio, Géologie)</dd></div>
+              <div><dt>Site officiel</dt><dd><a href="https://www.fsac.ac.ma/" target="_blank"
+                    rel="noopener noreferrer">fsac.ac.ma</a></dd></div>
+            </dl>
+          </aside>
+        </div>
+      </div>
+
+      <section class="section" aria-label="La FSAC en chiffres">
+        <div class="section-head">
+          <h2>La FSAC en chiffres</h2>
+          <span class="section-note">source : page d'accueil du site officiel</span>
+        </div>
+        <div class="stats-row" id="statsRow">
+          <div class="stat-chip skeleton-chip"></div>
+          <div class="stat-chip skeleton-chip"></div>
+          <div class="stat-chip skeleton-chip"></div>
+          <div class="stat-chip skeleton-chip"></div>
+          <div class="stat-chip skeleton-chip"></div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Dernières actualités">
+        <div class="section-head">
+          <h2>Dernières actualités</h2>
+          <a class="text-link" href="#/actualites">Tout afficher →</a>
+        </div>
+        <div id="homeFeed" class="feed" aria-busy="true">
+          <article class="card skeleton-card"></article>
+          <article class="card skeleton-card"></article>
+          <article class="card skeleton-card"></article>
+        </div>
+      </section>
+    </section>
+
+    <!-- ======================= NEWS VIEW ======================= -->
+    <section id="view-news" class="view hidden">
+      <header class="page-header">
+        <nav class="breadcrumb" aria-label="Fil d'ariane"><a href="#/">Accueil</a> <span>›</span> Actualités</nav>
+        <h1>Actualités &amp; annonces</h1>
+        <p class="page-sub">Annonces, événements et recrutements publiés sur fsac.ac.ma — actualisation automatique
+          possible.</p>
+        <div class="news-toolbar">
+          <nav class="tabs" id="tabs" aria-label="Filtres">
+            <button class="tab is-active" data-kind="all" type="button">Tout <span class="tab-count"
+                id="count-all">·</span></button>
+            <button class="tab" data-kind="annonce" type="button">Annonces <span class="tab-count"
+                id="count-annonce">·</span></button>
+            <button class="tab" data-kind="event" type="button">Événements <span class="tab-count"
+                id="count-event">·</span></button>
+            <button class="tab" data-kind="actu" type="button">Actualités <span class="tab-count"
+                id="count-actu">·</span></button>
+            <button class="tab" data-kind="recrut" type="button">Recrutements <span class="tab-count"
+                id="count-recrut">·</span></button>
+          </nav>
+          <div class="toolbar-actions">
+            <span class="feed-status muted" id="feedStatus">—</span>
+            <button id="btnLive" class="btn" type="button" aria-pressed="false"
+              title="Rafraîchir automatiquement toutes les 60 s">
+              <span class="live-dot" aria-hidden="true"></span> Live
+            </button>
+            <button id="btnRefresh" class="btn btn-primary" type="button">Actualiser</button>
+          </div>
+        </div>
+      </header>
+
+      <section id="feed" class="feed" aria-live="polite" aria-busy="true">
+        <article class="card skeleton-card"></article>
+        <article class="card skeleton-card"></article>
+        <article class="card skeleton-card"></article>
+        <article class="card skeleton-card"></article>
+      </section>
+
+      <div id="emptyState" class="state hidden">
+        <p class="state-title">Rien à afficher</p>
+        <p class="muted">Aucun élément ne correspond à ce filtre ou à cette recherche.</p>
+        <button class="btn" id="btnResetFilters" type="button">Réinitialiser</button>
+      </div>
+
+      <div id="errorState" class="state state-error hidden">
+        <p class="state-title">Impossible de joindre le site de la FSAC</p>
+        <p class="muted" id="errorMessage">—</p>
+        <button class="btn btn-primary" id="btnRetry" type="button">Réessayer</button>
+      </div>
+    </section>
+
+    <!-- ======================= CONTENT PAGE VIEW ======================= -->
+    <section id="view-page" class="view hidden">
+      <nav class="breadcrumb" aria-label="Fil d'ariane"><a href="#/">Accueil</a> <span>›</span>
+        <span id="pageCrumb">…</span></nav>
+      <h1 id="pageTitle" class="page-title">…</h1>
+      <nav class="page-nav" id="pageNav" aria-label="Sections de la page"></nav>
+      <div id="pageContent" class="prose" aria-busy="true">
+        <div class="sk-block" style="height:220px;border-radius:4px"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <img src="/static/img/FSAC-logo.jpg" alt="FSAC" width="150" height="59" class="footer-logo" />
+        <p>Faculté des Sciences Aïn Chock<br />Université Hassan II de Casablanca</p>
+      </div>
+      <div class="footer-col">
+        <h3>Ce site</h3>
+        <p>
+          Il s'agit d'un <strong>clone local non officiel</strong>, réalisé comme
+          <strong>preuve de concept</strong> pédagogique. Il reproduit l'interface et
+          relaie les données publiées sur le site officiel de la faculté.
+        </p>
+        <p class="footer-warn">Aucune affiliation avec l'Université Hassan II ou la FSAC.
+          Pour toute information officielle, consultez le site réel.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul class="footer-links">
+          <li><a href="#/page/presentation">Présentation</a></li>
+          <li><a href="#/page/departements">Départements</a></li>
+          <li><a href="#/page/formations">Formations</a></li>
+          <li><a href="#/page/recherche">Recherche</a></li>
+          <li><a href="#/actualites">Actualités</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Sites officiels</h3>
+        <ul class="footer-links">
+          <li><a href="https://www.fsac.ac.ma/" target="_blank" rel="noopener noreferrer">fsac.ac.ma ↗</a></li>
+          <li><a href="https://www.univh2c.ma/" target="_blank" rel="noopener noreferrer">univh2c.ma ↗</a></li>
+          <li><a href="https://ent.univh2c.ma" target="_blank" rel="noopener noreferrer">ENT Hassan II ↗</a></li>
+        </ul>
+        <a class="btn btn-on-dark" href="https://www.fsac.ac.ma/" target="_blank" rel="noopener noreferrer">Visiter le
+          site officiel ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Preuve de concept · clone technique non officiel · contenu et données © Université Hassan II — FSAC ·
+          <span id="footerYear"></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================= ARTICLE DRAWER ======================= -->
+  <div id="drawerBackdrop" class="drawer-backdrop hidden" aria-hidden="true"></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-label="Lecture d'un élément">
+    <header class="drawer-head">
+      <div class="drawer-kind">
+        <span class="badge" id="drawerBadge">—</span>
+        <time class="muted" id="drawerDate"></time>
+      </div>
+      <button class="btn btn-icon" id="btnCloseDrawer" type="button" aria-label="Fermer">✕</button>
+    </header>
+    <div class="drawer-body" id="drawerBody">
+      <div class="sk-block" style="height:24px;width:60%;margin:.5rem 0"></div>
+      <div class="sk-block" style="height:16px;width:90%;margin:.5rem 0"></div>
+      <div class="sk-block" style="height:180px;margin:1rem 0"></div>
+    </div>
+    <footer class="drawer-foot">
+      <div class="drawer-nav">
+        <button class="btn" id="btnPrev" type="button" disabled>← Précédent</button>
+        <button class="btn" id="btnNext" type="button" disabled>Suivant →</button>
+      </div>
+      <a class="btn btn-primary" id="btnOriginal" href="#" target="_blank" rel="noopener noreferrer">Ouvrir sur
+        fsac.ac.ma ↗</a>
+    </footer>
+  </aside>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+
+</html>
